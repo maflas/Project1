@@ -1,0 +1,64 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+  h1{
+    font-family:monospace ;
+  }
+  p{
+    font-family:'Courier New', Courier, monospace ;
+  }
+  h5{
+    font-family: monospace;
+  }
+.form {
+    align-self : center; 
+    width: 500px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;         /*100vh es el 100% de alto */
+    
+  }
+body{
+    background-image: url(imagenes/imagen_fondo.jpg);
+  }
+.img-tamaño{
+  width: 1300px;
+  height: 700px;
+}
+.img-card{
+  width: 285,5px;
+  height: 300px;
+}
+.letras-blan{
+  color:white;
+}
+.img-compra{
+  width:600px ;
+  height: 1000px ;
+}
+.abs-dere-bajo{
+  position:absolute;
+  bottom:5px;
+  right:10px;
+}
+.errores{   
+  background: red;  
+  color: #fff;
+  display: none;
+  font-size: 14px;
+     
+  margin-left: 185px;
+  padding: 10px;
+  position: absolute;
+}
