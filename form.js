@@ -8,7 +8,7 @@ const sexo=document.getElementById("sexo");
 
 const form = document.getElementById("form");
 const listInputs =document.querySelectorAll(".form-input");
-var validEmail =  /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+var expr =  (/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -40,7 +40,7 @@ form.addEventListener("submit", (e) => {
        
         mostrarMensajeError("select","Seleccione un genero");
     }
-    if(Email !== validEmail || Email.value.length < 3 || Email.value.trim()==""){
+    if(Email !== expr.test(correo) || Email.value.length < 3 || Email.value.trim()==""){
         mostrarMensajeError("Email","ingrese Email correcto");
     }
 
